@@ -1,0 +1,68 @@
+/* Style for the entire page */
+body {
+    font-family: Arial, sans-serif; /* Fonts */
+    text-align: center; /* Centers all text and elements inside the body */
+    background-color: #f4f4f4; /* Background color*/
+    margin: 0;/* Remove all outer spacing for the element */
+    padding: 20px; /* Space inside the body to keep content away from edges */
+}
+
+h1 {
+    font-size: 2em;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+/* Board */
+#divCheckersBoard {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    border: 4px solid #000;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+    border-radius: 8px;
+}
+
+/* Individual Square - Light Color*/
+.checkerSquare {
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+}
+
+/* Individual Square - Dark Color*/
+.checkerSquareAlt {
+    background-color: #000;
+}
+
+/* Ensures rows wrap correctly*/
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Pieces */
+.checkerPiece {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    cursor: grab; /* Shows draggable cursor */
+}
+
+.redPiece {
+    background-color: #c0392b;
+}
+
+.grayPiece {
+    background-color: #555;
+}
+
+/* Style while dragging */
+.dragging {
+    opacity: 0.6; /* Slightly transparent while dragging */
+}
+
